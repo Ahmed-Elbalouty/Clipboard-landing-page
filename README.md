@@ -1,2 +1,5 @@
-# Clipboard-landing-page
-This repository for solving "Clipboard landing page" challenge from Front-End Mentor challenges.
+# Frontend Mentor - Clipboard landing page
+
+![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋

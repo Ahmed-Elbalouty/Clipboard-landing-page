@@ -1,0 +1,393 @@
+/* Start Variables */
+:root{
+/* Primary */
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+/* Neutral */
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+/* Padding */
+--Padding-Section: 125px;
+}
+/* End Variables */
+
+/* Start Global Rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+/* This Media For Make My Design Proportional to Challenge Requirements */
+@media (min-width: 1400px) and (max-width: 1500px){  
+    body{
+        max-height: 3808px; 
+    }
+}
+a{
+    text-decoration: none;
+}
+h2{
+    font-size: 30px;
+}
+@media (max-width: 767px) {
+    h2{
+        font-size: 27px;
+    }
+}
+h2, h3{
+    color: var(--Dark-Grayish-Blue);
+}
+p{
+    line-height: 1.5;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container > a{
+    display: inline-block;
+    width: 220px;
+    padding: 18px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: .3s;
+}
+.container > a:first-of-type{
+    background-color: var(--Strong-Cyan);
+    margin-right: 10px;
+}
+.container > a:first-of-type:hover{
+    background-color: hsl(171, 66%, 44%, .8);
+}
+.container > a:last-of-type{
+    background-color: var(--Light-Blue);
+}
+.container > a:last-of-type:hover{
+    background-color: hsl(233, 100%, 69%, .8);
+}
+@media (max-width: 767px) {
+    .container > a{
+        display: block;
+        width: 280px;
+    }
+    .container > a:first-of-type{
+        margin: 40px auto 0;
+    }
+    .container > a:last-of-type{
+        margin: 20px auto 0;
+    }
+}
+/* End Global Rules */
+
+/* Start Responsive Container */
+@media (max-width: 550px) {
+    .container{
+        width: 350px;
+    }
+}
+@media (min-width: 551px) {
+    .container{
+        width: 500px;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* End Responsive Container */
+
+/* Start History Section */
+.history-section{
+    background-image: url(../images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: var(--Padding-Section);
+}
+.history-section .container > img{
+    width: 125px;
+    margin-bottom: 40px;
+}
+.history-section .container > h2{
+    font-size: 40px;
+}
+.history-section .container p{
+    color: var(--Grayish-Blue);
+    margin: 25px auto;
+    width: 55%;
+}
+@media (max-width: 767px) {
+    .history-section{
+        padding-top: 80px;
+    }
+    .history-section .container > h2{
+        font-size: 30px;
+    }
+    .history-section .container > p{
+        width: 100%;
+    }
+}
+/* End History Section */
+
+/* Start Keep Section */
+.keep-section{
+    padding-top: var(--Padding-Section);
+}
+.keep-section .container h2{
+    text-align: center;
+}
+.keep-section .container  > p{
+    text-align: center;
+    color: var(--Grayish-Blue);
+    margin: 25px auto;
+    width: 50%;
+}
+.keep-section .container .bottom{
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.keep-section .container .bottom img{
+    flex-basis: 65%;
+    width: 100%;
+    display: block;
+}
+@media (min-width: 1200px){
+    .keep-section .container .bottom img{
+        margin-left: -17%;
+    }
+}
+.keep-section .container .bottom .info{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+.keep-section .container .bottom .info > div:not(:last-of-type){
+    margin-bottom: 55px;
+}
+.keep-section .container .bottom .info p{
+    margin-top: 10px;
+    color: var(--Grayish-Blue);
+}
+@media (max-width: 767px) {
+    .keep-section .container > p{
+        width: 100%;
+    }
+    .keep-section .container .bottom{
+        flex-direction: column;
+        gap: 70px;
+    }
+    .keep-section .container .bottom .info{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .keep-section .container .bottom img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+/* End Keep Section */
+
+/* Start Access Section */
+.access-section{
+    padding-top: var(--Padding-Section);
+    text-align: center;
+}
+.access-section img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: .3s;
+}
+.access-section img:hover{
+    transform: scale(1.05);
+}
+.access-section p{
+    color: var(--Grayish-Blue);
+    margin: 25px auto 70px;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .access-section .container > p{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+/* End Access Section */
+
+/* Start Subercharge Sectoin */
+.subercharge-section {
+    padding-top: var(--Padding-Section);
+    text-align: center;
+}
+.subercharge-section .container  > p{
+    color: var(--Grayish-Blue);
+    margin: 25px auto;
+    width: 50%;
+}
+.subercharge-section .container .cards{
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px, 1fr));
+    gap: 30px;
+}
+.subercharge-section .container .cards .card:first-child > img{
+    height: 32px;
+}
+.subercharge-section .container .cards .card h3{
+    margin: 30px 0 20px;
+}
+.subercharge-section .container .cards .card p{
+    color: var(--Grayish-Blue);
+}
+@media (max-width: 767px) {
+    .subercharge-section .container > p{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+/* End Subercharge Sectoin */
+
+/* Start Tech Companies Section */
+.tech-section{
+    padding-top: calc(var(--Padding-Section) + 75px);
+}
+.tech-section .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+.tech-section .container img{
+    transition: .3s;
+}
+.tech-section .container img:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 767px) {
+    .tech-section .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .tech-section .container img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+/* End Tech Companies Section */
+
+/* Start Clipboard Section */
+.clipboard-section{
+    padding-top: calc(var(--Padding-Section) + 75px);
+    text-align: center;
+}
+.clipboard-section .container p{
+    text-align: center;
+    color: var(--Grayish-Blue);
+    margin: 25px auto;
+    width: 50%;
+}
+@media (max-width: 767px) {
+    .clipboard-section .container > p{
+        width: 100%;
+    }
+}
+/* End Clipboard Section */
+
+/* Start Footer */
+.footer{
+    margin-top: 180px;
+    background-color: hsl(201, 11%, 66%, .2);
+}
+.footer .container{
+    padding: 44.5px 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.footer .container > img{
+    width: 50px;
+    margin-right: 40px;
+}
+.footer .container > div span{
+    display: block;
+    color: var(--Dark-Grayish-Blue);
+}
+.footer .container > div span:first-child{
+    margin-bottom: 15px;
+}
+.footer .container > div:nth-last-of-type(2) {
+    align-self: flex-start;
+}
+.footer .container > div a {
+    color: var(--Dark-Grayish-Blue);
+    transition: .3s;
+}
+.footer .container > div a:hover {
+    color: var(--Strong-Cyan);
+}
+.footer .container .social-icons{
+    margin-left: auto;
+}
+.footer .container .social-icons i{
+    color: var(--Dark-Grayish-Blue);
+    font-size: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+.footer .container .social-icons i:hover{
+    color: var(--Strong-Cyan);
+}
+.footer .container .social-icons i:not(:last-child){
+    margin-right: 20px;
+}
+@media (max-width: 767px) {
+    .footer .container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 25px;
+    }
+    .footer .container > div:nth-last-of-type(2) {
+        align-self: auto;
+    }
+    .footer .container > img{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .footer .container > div span:first-child{
+        margin-bottom: 25px;
+    }
+    .footer .container .social-icons{
+        margin: auto;
+        margin-top: 20px;
+    }
+    .footer .container .social-icons i:not(:last-child){
+        margin-right: 30px;
+    }   
+}
+/* End Footer */
